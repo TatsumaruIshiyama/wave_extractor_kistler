@@ -81,7 +81,7 @@ def read_form():
         st.session_state['col_st'] = st.text_input(
             label = 'Standard Column',
             help = '基準にする列名を入力',
-            value = 'acc_X'
+            value = 'Fy'
         )
         read_btn = st.form_submit_button('Read')
     return read_btn
