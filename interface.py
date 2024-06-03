@@ -74,7 +74,7 @@ def read_form():
         )
         st.session_state['col_name'] = st.text_input(
         label = 'Columns Name',
-        value = 'mic,acc_Z,acc_X,acc_Y,curr_Y,curr_spindle,curr_Z,curr_X',
+        value = 'time,Fz,Fx,Fy',
         help = '列名をカンマ区切りで入力'
         )
         st.session_state['col_name'] = list(st.session_state['col_name'].split(','))

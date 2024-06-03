@@ -11,8 +11,7 @@ def read_standard(data, col_name, col_st):
 
     df_st = pd.read_csv(
     copy.copy(data),
-    skiprows = 70,
-    skipfooter = 3,
+    skiprows = 32,
     usecols = [n_st_col + 2],
     encoding = 'shift jis',
     engine = 'python'
