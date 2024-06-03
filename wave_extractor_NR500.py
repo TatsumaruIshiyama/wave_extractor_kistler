@@ -70,9 +70,8 @@ def extract_df(data, col_name, id_ex_L, id_ex_R):
     for i in range(len(id_ex_L)):
         df_ex = pd.read_csv(
             copy.copy(data),
-            skiprows = int(70 + id_ex_L[i]),
+            skiprows = int(32 + id_ex_L[i]),
             nrows = int(id_ex_R[i] - id_ex_L[i]),
-            usecols = list(range(int(2), int(2 + len(col_name)))),
             encoding = 'shift jis',
             engine = 'python'
         )
